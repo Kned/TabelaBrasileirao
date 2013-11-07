@@ -1,12 +1,11 @@
-require 'nokogiri'
-require 'open-uri'
+class Time_Bean
 
-# Get a Nokogiri::HTML::Document for the page we’re interested in...
+	attr_accessor :nome
+	attr_accessor :qtd_partidas
+	attr_accessor :qtd_vitorias
+	attr_accessor :qtd_empates
+	attr_accessor :qtd_derrotas
+	attr_accessor :qtd_gol_pro
+	attr_accessor :qtd_gol_contra
 
-link = Nokogiri::HTML(open('http://globoesporte.globo.com/futebol/brasileirao-serie-a/'))
-
-link.css('h3.r a').each do |tabela|
-	puts tabela.content
-end
-
-
+end	
