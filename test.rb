@@ -1,11 +1,22 @@
-class Time_Bean
+require 'rubygems'
+require 'open-uri'
+require "test/unit"
+require_relative 'main'
 
-	attr_accessor :nome
-	attr_accessor :qtd_partidas
-	attr_accessor :qtd_vitorias
-	attr_accessor :qtd_empates
-	attr_accessor :qtd_derrotas
-	attr_accessor :qtd_gol_pro
-	attr_accessor :qtd_gol_contra
+class Test < Test::Unit::TestCase
 
-end	
+	def setup
+		@main = Main.new
+		@main.pega_nome
+	end
+
+	def test_possui_nome
+		assert_not_nil(@main.pega_nome)
+	end
+
+	def test_alguma_partida
+		assert_not_nil(@main.pega_partida)
+	end
+
+
+end
