@@ -5,13 +5,8 @@ require_relative 'buscadedados'
 class Main
 		
 	@busca_dados = Busca_Dados.new
-
-=begin
-	
-	def pega_partida
-		busca_dados.quantidade_de_partidas
-	end
-
-=end
-
+	@busca_dados.busca_time
 end
+
+#main = Main.new
+#main.setup

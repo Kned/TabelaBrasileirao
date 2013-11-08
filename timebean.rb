@@ -1,6 +1,7 @@
 class Time_Bean
 
 	attr_accessor :nome
+	attr_accessor :qtd_pontos
 	attr_accessor :qtd_partidas
 	attr_accessor :qtd_vitorias
 	attr_accessor :qtd_empates
