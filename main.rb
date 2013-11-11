@@ -8,5 +8,4 @@ class Main
 	@busca_dados.busca_time
 end
 
-#main = Main.new
-#main.setup
+main = Main.new
